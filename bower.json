@@ -1,0 +1,28 @@
+{
+  "name": "sass-named-colors",
+  "homepage": "https://github.com/synapticism/sass-named-colors",
+  "authors": [
+    {
+      "name": "Alexander Synaptic",
+      "email": "alexander@synapticism.com",
+      "homepage": "http://synapticism.com"
+    }
+  ],
+  "main": "_named_colors.scss",
+  "keywords": [
+    "sass",
+    "scss",
+    "color",
+    "colors",
+    "colour",
+    "colours",
+    "palette"
+  ],
+  "license": "MIT/GPLv3",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
