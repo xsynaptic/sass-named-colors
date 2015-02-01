@@ -4,6 +4,8 @@ A Sass micro-library featuring a standardized list of 1,500+ named colors. No ne
 
 Original list of colors compiled by [Chirag Mehta](http://chir.ag/projects/name-that-color/) and converted to Sass by [James Pearson](https://github.com/FearMediocrity/sass-color-palettes). This project differs mainly in providing a simple function to access the named color map as well as an install path via Bower.
 
+Additional credit is due to Erskine Design for the article [Friendlier colour names with Sass maps](http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/).
+
 
 
 ## Installation
