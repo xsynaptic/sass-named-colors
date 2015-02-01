@@ -1,8 +1,8 @@
 # SASS NAMED COLORS
 
-A Sass micro-library featuring 1,500+ named colors.
+A Sass micro-library featuring a standardized list of 1,500+ named colors. No need to puzzle out hex values; just use `emerald`, `monsoon`, `cloud`, `carnation`, and so on.
 
-Original list of colors compiled by [Chirag Mehta](http://chir.ag/projects/name-that-color/) and converted to Sass by [James Pearson](https://github.com/FearMediocrity/sass-color-palettes). This project differs mainly in providing a simple function to access the named color map.
+Original list of colors compiled by [Chirag Mehta](http://chir.ag/projects/name-that-color/) and converted to Sass by [James Pearson](https://github.com/FearMediocrity/sass-color-palettes). This project differs mainly in providing a simple function to access the named color map as well as an install path via Bower.
 
 
 
@@ -40,6 +40,8 @@ $k-colors: map-merge($k-colors, (
   jove:           #24221E
 ));
 ```
+
+Need a tool to browse the options? Try the color picker on the original [project page](http://chir.ag/projects/name-that-color/).
 
 
 
