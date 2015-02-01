@@ -29,6 +29,7 @@ This will return the named color in the `$k-colors` table. You could use this in
     color: rgba(k-color(orange), .9);
   }
 }
+```
 
 To extend the default colors on a per project basis:
 
