@@ -1,28 +1,20 @@
 # SASS NAMED COLORS
 
-A Sass micro-library featuring a standardized list of 1,500+ named colors. No need to puzzle out hex values; just use `emerald`, `monsoon`, `cloud`, `carnation`, and so on.
+A Sass micro-library featuring a standardized list of 1,500+ named colors. No need to puzzle out hex values; just use `k-color(emerald)`, `k-color(monsoon)`, `k-colour(cloud)`, and so on. Also features aliased functions and variable names for those who prefer to work with colo**u**rs ;)
 
-Original list of colors compiled by [Chirag Mehta](http://chir.ag/projects/name-that-color/) and converted to Sass by [James Pearson](https://github.com/FearMediocrity/sass-color-palettes). This project differs mainly in providing a simple function to access the named color map as well as an install path via Bower.
-
-Additional credit is due to Erskine Design for the article [Friendlier colour names with Sass maps](http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/).
+Original list of colors compiled by [Chirag Mehta](http://chir.ag/projects/name-that-color/) and converted to Sass by [James Pearson](https://github.com/FearMediocrity/sass-color-palettes). Additional credit is due to Erskine Design for the article [Friendlier colour names with Sass maps](http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/). This project expands on their work by providing a bit of syntactic sugar as well as a Bower package.
 
 
 
 ## Installation
 
-Download/clone this repo or install with Bower: `bower install sass-named-colors -D`. This project has no dependencies. Requirements: Sass 3.3+.
+Download/clone this repo or install with Bower: `bower install sass-named-colors -D`. Import into your project with `@import "sass-named-colors/named_colors"`. This library has no dependencies. Requirements: Sass 3.3+.
 
 
 
 ## Usage
 
-This library ships with one function:
-
-```scss
-k-color($color);
-```
-
-This will return the named color in the `$k-colors` table. You could use this in any number of ways:
+This library ships with one function: `k-color($color, $fallback, $library)`. Only `$color` is required; the remaining arguments are mainly for internal use. Example:
 
 ```scss
 .element {
@@ -33,7 +25,7 @@ This will return the named color in the `$k-colors` table. You could use this in
 }
 ```
 
-To extend the default colors on a per project basis:
+To extend the built-in colors on a per-project basis:
 
 ```language-scss
 $k-colors: map-merge($k-colors, (
@@ -45,6 +37,12 @@ $k-colors: map-merge($k-colors, (
 ```
 
 Need a tool to browse the options? Try the color picker on the original [project page](http://chir.ag/projects/name-that-color/).
+
+
+
+## Spelling
+
+If you `@import "sass-named-colors/named_colours"` you can use international spelling with all relevant functions and variables. Whatever you do, be consistent in what you use; don't add custom colors to `$k-colors` and then attempt to call them with `k-colours()` as this function will be checking `$k-colours`. Don't want alternate spelling? Don't import the alternate file and you won't be affected at all.
 
 
 

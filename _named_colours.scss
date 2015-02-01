@@ -1,0 +1,12 @@
+// ==== NAMED COLOURS ==== //
+
+// For those of us who aren't American ;)
+
+@import "named_colors";
+
+$k-colours: $k-colors;
+$k-colours-default: $k-colors-default;
+
+@function k-colour($colour, $fallback: $k-colours-default, $library: $k-colours) {
+  @return k-color($colour, $fallback, $library);
+}

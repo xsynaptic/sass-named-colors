@@ -1573,15 +1573,16 @@ $k-colors: (
 );
 
 // Default fallback color
-$k-color-default: #000000;
+$k-colors-default: #000000;
 
 // Originally adapted from: http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/
-@function k-color($color) {
-  @if map-has-key($k-colors, $color) {
-    @return map-get($k-colors, $color);
+@function k-color($color: black, $fallback: $k-colors-default, $library: $k-colors) {
+
+  @if map-has-key($library, $color) {
+    @return map-get($library, $color);
   }
 
   // Send a warning to the console and fade to black
-  @warn "Color not found: '#{$color}'.";
-  @return $k-color-default;
+  @warn "Not found: '#{$color}'.";
+  @return $fallback;
 }
