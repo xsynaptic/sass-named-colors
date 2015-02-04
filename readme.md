@@ -4,6 +4,8 @@ A Sass micro-library featuring a standardized list of 1,500+ named colors. No ne
 
 Original list of colors compiled by [Chirag Mehta](http://chir.ag/projects/name-that-color/) and converted to Sass by [James Pearson](https://github.com/FearMediocrity/sass-color-palettes). Additional credit is due to Erskine Design for the article [Friendlier colour names with Sass maps](http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/). This project expands on their work by providing a bit of syntactic sugar as well as a Bower package.
 
+[Read the announcement post on my blog](http://synapticism.com/a-sass-micro-library-for-working-with-named-colours/).
+
 
 
 ## Installation
@@ -27,7 +29,7 @@ This library ships with one function: `k-color($color, $fallback, $library)`. On
 
 To extend the built-in colors on a per-project basis:
 
-```language-scss
+```scss
 $k-colors: map-merge($k-colors, (
   norse-blue:     #5cb6cc,
   suomi-blue:     #559dd1,
