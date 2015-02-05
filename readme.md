@@ -10,7 +10,7 @@ Original list of colors compiled by [Chirag Mehta](http://chir.ag/projects/name-
 
 ## Installation
 
-Download/clone this repo or install with Bower: `bower install sass-named-colors -D`. Import into your project with `@import "sass-named-colors/named_colors"`. This library has no dependencies. Requirements: Sass 3.3+.
+Download/clone this repo or install with Bower: `bower install sass-named-colors -D`. Import into your project with `@import "sass-named-colors/named-colors"`. This library has no dependencies. Requirements: Sass 3.3+.
 
 
 
@@ -44,7 +44,7 @@ Need a tool to browse the options? Try the color picker on the original [project
 
 ## Spelling
 
-If you `@import "sass-named-colors/named_colours"` you can use international spelling with all relevant functions and variables. Whatever you do, be consistent in what you use; don't add custom colors to `$k-colors` and then attempt to call them with `k-colours()` as this function will be checking `$k-colours`. Don't want alternate spelling? Don't import the alternate file and you won't be affected at all.
+If you `@import "sass-named-colors/named-colours"` you can use international spelling with all relevant functions and variables. Whatever you do, be consistent in what you use; don't add custom colors to `$k-colors` and then attempt to call them with `k-colours()` as this function will be checking `$k-colours`. Don't want alternate spelling? Don't import the alternate file and you won't be affected at all.
 
 
 
