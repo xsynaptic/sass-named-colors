@@ -1571,9 +1571,11 @@ $k-colors: (
   ivory: #fffff0,
   white: #ffffff
 );
+$k-colours: $k-colors;
 
 // Default fallback color
 $k-colors-default: #000000;
+$k-colours-default: $k-colors-default;
 
 // Originally adapted from: http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/
 @function k-color($color: black, $fallback: $k-colors-default, $library: $k-colors) {
@@ -1586,3 +1588,7 @@ $k-colors-default: #000000;
   @warn "Not found: '#{$color}'.";
   @return $fallback;
 }
+@function k-colour($colour, $fallback: $k-colours-default, $library: $k-colours) {
+  @return k-color($colour, $fallback, $library);
+}
+

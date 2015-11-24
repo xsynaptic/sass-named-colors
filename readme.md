@@ -1,8 +1,8 @@
 # SASS NAMED COLORS
 
-A Sass micro-library featuring a standardized list of 1,500+ named colors. No need to puzzle out hex values; just use `k-color(emerald)`, `k-color(monsoon)`, `k-colour(cloud)`, and so on. Also features aliased functions and variable names for those who prefer to work with colo**u**rs ;)
+A Sass micro-library featuring a standardized list of 1,500+ named colors. No need to puzzle out hex values; just use `k-color(emerald)`, `k-color(monsoon)`, `k-color(cloud)`, and so on. Also features aliased functions and variable names for those who prefer to work with colo**u**rs ;)
 
-Original list of colors compiled by [Chirag Mehta](http://chir.ag/projects/name-that-color/) and converted to Sass by [James Pearson](https://github.com/FearMediocrity/sass-color-palettes). Additional credit is due to Erskine Design for the article [Friendlier colour names with Sass maps](http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/). This project expands on their work by providing a bit of syntactic sugar as well as a Bower package.
+Original list of colors compiled by [Chirag Mehta](http://chir.ag/projects/name-that-color/) and converted to Sass by [James Pearson](https://github.com/FearMediocrity/sass-color-palettes). Additional credit is due to Erskine Design for the article [Friendlier colour names with Sass maps](http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/). This project expands on their work by providing a bit of syntactic sugar as well as npm and Bower packages.
 
 [Read the announcement post on my blog](http://synapticism.com/dev/a-sass-micro-library-for-working-with-named-colours/).
 
@@ -10,7 +10,9 @@ Original list of colors compiled by [Chirag Mehta](http://chir.ag/projects/name-
 
 ## Installation
 
-Download/clone this repo or install with Bower: `bower install sass-named-colors -D`. Import into your project with `@import "sass-named-colors/named-colors"`. This library has no dependencies. Requirements: Sass 3.3+.
+Download/clone this repo or install with npm (`npm install sass-named-colors --save-dev`) or Bower (`bower install sass-named-colors -D`). Import into your project with `@import "sass-named-colors/named-colors"`.
+
+This library has no dependencies. Requirements: Sass 3.3+.
 
 
 
@@ -44,7 +46,7 @@ Need a tool to browse the options? Try the color picker on the original [project
 
 ## Spelling
 
-If you `@import "sass-named-colors/named-colours"` you can use international spelling with all relevant functions and variables. Whatever you do, be consistent in what you use; don't add custom colors to `$k-colors` and then attempt to call them with `k-colours()` as this function will be checking `$k-colours`. Don't want alternate spelling? Don't import the alternate file and you won't be affected at all.
+You can also use international spelling with all relevant functions and variables and swap "color" for "colour". Whatever you do, be consistent in what you use; don't add custom colors to `$k-colors` and then attempt to call them with `k-colours()` as this function will be checking `$k-colours`. Don't want alternate spelling? Ignore it and you won't be affected at all.
 
 
 

@@ -1,0 +1,27 @@
+{
+  "name": "sass-named-colors",
+  "version": "0.3.0",
+  "description": "A Sass micro-library featuring 1,500+ named colors",
+  "homepage": "https://www.github.com/synapticism/sass-named-colors",
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/synapticism/sass-named-colors.git"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "color",
+    "colors",
+    "colour",
+    "colours",
+    "palette",
+    "eyeglass-module"
+  ],
+  "author": "Alexander Synaptic <alexander@synapticism.com>",
+  "license": "GPL-3.0",
+  "main": "sass/index.scss",
+  "eyeglass": {
+    "needs": "^0.7.1",
+    "exports": "eyeglass-exports.js"
+  }
+}
